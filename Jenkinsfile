@@ -10,8 +10,9 @@ pipeline {
             }
         stage('Test') {
             steps {
-		echo "in Test"
+		echo "inside Test"
             }
-        }
+         }
+      }
     }
 }
