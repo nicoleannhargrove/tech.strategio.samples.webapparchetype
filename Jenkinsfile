@@ -1,4 +1,4 @@
-#!/usr/bin env groovy
+
 pipeline {
     agent any
     tools {
@@ -8,12 +8,12 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -version'
-         }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
             }
-         }
-      }
+        }
+        stage('Unit Test') {
+            steps{
+                echo 'In Stage Unit Test'
+            }
+        }
     }
 }
