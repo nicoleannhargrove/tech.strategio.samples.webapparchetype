@@ -7,11 +7,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -version'
-            }
-        stage('Test') {
-            steps {
-		echo "inside Test"
-            }
          }
       }
     }
